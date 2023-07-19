@@ -2,8 +2,8 @@ import sys
 import os
 import unittest
 import sys
-sys.path.insert(0,os.path.abspath(os.path.join(os.path.dirname(_file_)+'/src')))
-sys.path.insert(0,os.path.abspath(os.path.join(os.path.dirname(_file_)+'/tests')))
+sys.path.insert(0,os.path.abspath(os.path.join(os.path.dirname(__file__)+'/src')))
+sys.path.insert(0,os.path.abspath(os.path.join(os.path.dirname(__file__)+'/tests')))
 from core import main
 if __name__=='__main__':
   f=open('packets/tcp.txt','r')
